@@ -49,6 +49,7 @@
         foldl recursiveUpdate { } attrsList;
     in
     {
+      inherit lib;
       schemes = { inherit base16 base24; };
     };
 }
